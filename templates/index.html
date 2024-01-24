@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Stock Prediction</title>
+</head>
+<body>
+
+    <h1>Bitcoin Stock Prediction Analysis</h1>
+
+    <div>
+        <h2>Stock Analysis Chart</h2>
+        {{ plot1|safe }}
+    </div>
+
+    <div>
+        <h2>Whole Period of Bitcoin Close Price (2014-2023)</h2>
+        {{ plot2|safe }}
+    </div>
+
+    <div>
+        <h2>Considered Period to Predict Bitcoin Close Price</h2>
+        {{ plot3|safe }}
+    </div>
+
+    <div>
+        <h2>Comparison Between Original Close Price vs Predicted Close Price</h2>
+        {{ plot4|safe }}
+    </div>
+
+    <div>
+        <h2>Compare Last 15 Days vs Next 15 Days</h2>
+        {{ plot5|safe }}
+    </div>
+
+    <div>
+        <h2>Plotting Whole Closing Stock Price with Prediction</h2>
+        {{ plot6|safe }}
+    </div>
+
+</body>
+</html>
